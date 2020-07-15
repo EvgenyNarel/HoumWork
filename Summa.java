@@ -5,12 +5,10 @@ public class Summa {
          */
         int a=1;
         int b=0;
-
-        while(a<=256) {
-            a *= 2;
-            b = +a;
-            }
-
+        while(a<=256){
+            a*= 2;
+            b = +a-1;
+        }
         System.out.println("Сумма чисел равна: " +b);
     }
 }
