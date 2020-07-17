@@ -2,24 +2,22 @@ public class ThreeNumber {
     public static void main(String[] args) {
         /*Найдите сумму первых n целых чисел, которые делятся на 3.
          */
-        int a=3;
-        int b=0;
-        int c=0;
-        for(int i=1;i<11;i++){
-            c=i%3;
 
-            if(c==0){
-                b=b+i;
-
-                }
-
+        int sum = 0;
+        int i = 0;
+        for(int j=0;j<3;j++) {
+            if (i % 3 == 0) {
+                sum += i;
             }
-        System.out.println(b);
-
-            }
-
+            i += 3;
 
         }
+        System.out.println(sum);
+
+    }
+
+
+}
 
 
 
