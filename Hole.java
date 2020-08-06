@@ -6,20 +6,20 @@ public class Hole {
         Имеется прямоугольное отверстие размерами a и b, определить, можно ли его
         полностью закрыть круглой картонкой радиусом r.
          */
-        double a = 8;
-        double b = 4;
-        double a1 = a / 2;
-        double b1 = b / 2;
-        double r = 5;
-        if ((a <= 0) || (b <= 0) || (r <= 0)) {
+        double stora = 8;
+        double storb = 4;
+        double radius = 0;
+        double diametr=radius*2;
+        if ((stora <= 0) || (storb <= 0) || (radius <= 0)) {
             System.out.println(" Введите положительные числа!");
-        } else {
+            } else {
+// расчитываю гипотенузу прямоугольнника, если он равна диаметру или меньше диаметра кортонки то отверстие можно закрыть
+            double storc = (stora*stora) + (storb * storb);
+            double gipotenuza = (double) Math.sqrt(storc);
+            System.out.println(gipotenuza);
+            System.out.println(diametr);
 
-            double stor = (a1 * a1) + (b1 * b1);     //нашел половину диагонали прямоугольника,
-            double resalt = (double) Math.sqrt(stor);//которая равна радиусу окружности
-            System.out.println(resalt);
-
-            if (r >= resalt) {
+            if (diametr >= gipotenuza) {
                 System.out.println("Картонка закрывает отверстие");
             } else {
                 System.out.println("Картонка не закрывает отверстие");
