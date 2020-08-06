@@ -3,15 +3,5 @@ public class Summa {
         /*
         3)Вычислить: 1+2+4+8+...+256.
          */
-        int a = 1;
-        int b = 0;
-
-        while (a <= 256) {
-
-            b += a;
-            a *= 2;
-        }
-
-        System.out.println("Сумма чисел равна: " + b);
-    }
+<<<<<<
 }
